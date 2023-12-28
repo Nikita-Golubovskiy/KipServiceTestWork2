@@ -59,5 +59,23 @@ namespace BusinessLogicLayer.KipServiceTestWork.Model.Assets.Strings.Errors {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to У лога отсутствует запрос..
+        /// </summary>
+        internal static string LOG_REQUEST_IS_MISSING {
+            get {
+                return ResourceManager.GetString("LOG_REQUEST_IS_MISSING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to У лога отсутствует ответ..
+        /// </summary>
+        internal static string LOG_RESPONSE_IS_MISSING {
+            get {
+                return ResourceManager.GetString("LOG_RESPONSE_IS_MISSING", resourceCulture);
+            }
+        }
     }
 }

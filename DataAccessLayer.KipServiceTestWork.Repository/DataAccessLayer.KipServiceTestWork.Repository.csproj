@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
@@ -11,9 +11,5 @@
         <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Base\DataAccessLayer.KipServiceTestWork.Base.csproj" />
         <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Database\DataAccessLayer.KipServiceTestWork.Database.csproj" />
         <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Converters\" />
     </ItemGroup>
 </Project>

@@ -1,3 +1,5 @@
+using BusinessLogicLayer.KipServiceTestWork.Repository.Interfaces;
+using DataAccessLayer.KipServiceTestWork.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +18,8 @@ internal sealed class RepositoryConfigurator : IConfigurator
     /// <param name="servicesCollection">Services collection, which ones must to be configured, reference value.</param>
     public void ConfigureServices(IServiceCollection servicesCollection)
     {
+        servicesCollection.AddScoped<ILogsRepository, LogsRepository>();
+        servicesCollection.AddScoped<IUsersRepository, UsersRepository>();
     }
 
     /// <summary>

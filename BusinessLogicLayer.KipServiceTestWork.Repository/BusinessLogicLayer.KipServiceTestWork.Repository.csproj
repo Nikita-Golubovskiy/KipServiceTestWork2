@@ -9,9 +9,4 @@
         <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Model\BusinessLogicLayer.KipServiceTestWork.Model.csproj" />
         <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Interfaces\" />
-      <Folder Include="ParameterObjects\" />
-    </ItemGroup>
 </Project>

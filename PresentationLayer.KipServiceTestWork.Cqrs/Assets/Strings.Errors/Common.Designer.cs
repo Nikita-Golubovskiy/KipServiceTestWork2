@@ -61,6 +61,15 @@ namespace PresentationLayer.KipServiceTestWork.Cqrs.Assets.Strings.Errors {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Лога с заданым идентификатором не найдено в системе..
+        /// </summary>
+        internal static string LOG_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("LOG_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Параметр запроса у ключа/команды не может быть пустым..
         /// </summary>
         internal static string REQUEST_ARGUMENT_IS_MISSING {

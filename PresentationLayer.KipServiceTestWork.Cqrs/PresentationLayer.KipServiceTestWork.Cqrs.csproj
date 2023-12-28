@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
@@ -28,12 +28,5 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Common.Designer.cs</LastGenOutput>
       </EmbeddedResource>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Commands\" />
-      <Folder Include="Converters\" />
-      <Folder Include="DataTransferObjects\" />
-      <Folder Include="Queries\" />
     </ItemGroup>
 </Project>

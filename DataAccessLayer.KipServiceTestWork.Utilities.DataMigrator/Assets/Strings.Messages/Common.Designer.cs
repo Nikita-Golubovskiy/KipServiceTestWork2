@@ -62,20 +62,20 @@ namespace DataAccessLayer.KipServiceTestWork.Utilities.DataMigrator.Assets.Strin
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ...migration finished..
+        ///   Looks up a localized string similar to ...user sign test data migration finished..
         /// </summary>
-        internal static string MIGRATION_FINISH {
+        internal static string USER_SIGN_TEST_DATA_MIGRATION_FINISH {
             get {
-                return ResourceManager.GetString("MIGRATION_FINISH", resourceCulture);
+                return ResourceManager.GetString("USER_SIGN_TEST_DATA_MIGRATION_FINISH", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Migration started....
+        ///   Looks up a localized string similar to User sign test data migration started....
         /// </summary>
-        internal static string MIGRATION_START {
+        internal static string USER_SIGN_TEST_DATA_MIGRATION_START {
             get {
-                return ResourceManager.GetString("MIGRATION_START", resourceCulture);
+                return ResourceManager.GetString("USER_SIGN_TEST_DATA_MIGRATION_START", resourceCulture);
             }
         }
     }

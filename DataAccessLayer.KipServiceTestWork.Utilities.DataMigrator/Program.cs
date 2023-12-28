@@ -1,7 +1,6 @@
-using System;
 using DataAccessLayer.KipServiceTestWork.Utilities.DataMigrator.Migrators;
 
-using Messages = DataAccessLayer.KipServiceTestWork.Utilities.DataMigrator.Assets.Strings.Messages.Common;
+using TestData = DataAccessLayer.KipServiceTestWork.Utilities.DataMigrator.Migrators.TestData;
 
 namespace DataAccessLayer.KipServiceTestWork.Utilities.DataMigrator;
 
@@ -16,6 +15,7 @@ public sealed class Program
     private static void migrateData()
     {
         var migrator = new CompositeMigrator(
+            new TestData.UserSignMigrator()
         );
 
         migrator.Migrate();

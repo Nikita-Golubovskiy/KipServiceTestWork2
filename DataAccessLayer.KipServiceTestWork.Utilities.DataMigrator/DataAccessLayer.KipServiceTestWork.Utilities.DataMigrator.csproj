@@ -4,6 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
     </PropertyGroup>
+    <ItemGroup>
+      <Compile Remove="Migrators\Dictionary\**" />
+      <EmbeddedResource Remove="Migrators\Dictionary\**" />
+      <None Remove="Migrators\Dictionary\**" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="EFCore.BulkExtensions" Version="7.1.6" />
@@ -22,10 +27,6 @@
         <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Base\DataAccessLayer.KipServiceTestWork.Base.csproj" />
         <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Database\DataAccessLayer.KipServiceTestWork.Database.csproj" />
         <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <Folder Include="Migrators\Dictionary\" />
     </ItemGroup>
 
     <ItemGroup>

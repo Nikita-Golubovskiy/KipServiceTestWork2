@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EFCore.BulkExtensions" Version="7.1.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Base\BusinessLogicLayer.KipServiceTestWork.Base.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Model\BusinessLogicLayer.KipServiceTestWork.Model.csproj" />
+        <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Base\DataAccessLayer.KipServiceTestWork.Base.csproj" />
+        <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Database\DataAccessLayer.KipServiceTestWork.Database.csproj" />
+        <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Migrators\Dictionary\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Assets\Strings.Messages\Common.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Common.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Assets\Strings.Messages\Common.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Common.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Base\BusinessLogicLayer.KipServiceTestWork.Base.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Model\BusinessLogicLayer.KipServiceTestWork.Model.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Repository\BusinessLogicLayer.KipServiceTestWork.Repository.csproj" />
+        <ProjectReference Include="..\DataAccessLayer.KipServiceTestWork.Repository\DataAccessLayer.KipServiceTestWork.Repository.csproj" />
+        <ProjectReference Include="..\PresentationLayer.KipServiceTestWork.Cqrs\PresentationLayer.KipServiceTestWork.Cqrs.csproj" />
+        <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Assets\Strings.Errors\Common.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Common.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Assets\Strings.Errors\Common.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Common.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="V1\Interfaces\" />
+    </ItemGroup>
+</Project>

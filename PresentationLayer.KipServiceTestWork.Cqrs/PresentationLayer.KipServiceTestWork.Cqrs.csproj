@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Base\BusinessLogicLayer.KipServiceTestWork.Base.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Model\BusinessLogicLayer.KipServiceTestWork.Model.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.KipServiceTestWork.Repository\BusinessLogicLayer.KipServiceTestWork.Repository.csproj" />
+        <ProjectReference Include="..\SharedLayer.KipServiceTestWork\SharedLayer.KipServiceTestWork.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Assets\Strings.Errors\Common.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Common.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Assets\Strings.Errors\Common.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Common.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands\" />
+      <Folder Include="Converters\" />
+      <Folder Include="DataTransferObjects\" />
+      <Folder Include="Queries\" />
+    </ItemGroup>
+</Project>

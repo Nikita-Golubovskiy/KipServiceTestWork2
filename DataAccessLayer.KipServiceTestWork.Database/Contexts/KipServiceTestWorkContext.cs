@@ -1,4 +1,5 @@
 using System.Reflection;
+using DataAccessLayer.KipServiceTestWork.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.KipServiceTestWork.Database.Contexts;
@@ -22,6 +23,16 @@ public class KipServiceTestWorkContext : BaseDbContext<KipServiceTestWorkContext
     public KipServiceTestWorkContext(DbContextOptions<KipServiceTestWorkContext> options) : base(options)
     {
     }
+
+    /// <summary>
+    /// User signs set property.
+    /// </summary>
+    public virtual DbSet<UserSign> UserSigns { get; set; }
+
+    /// <summary>
+    /// Logs set property.
+    /// </summary>
+    public virtual DbSet<Log> Logs { get; set; }
 
     /// <summary>
     /// Override this method to further configure the model that was discovered by convention

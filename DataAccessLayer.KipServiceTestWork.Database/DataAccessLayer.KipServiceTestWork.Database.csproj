@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
@@ -57,8 +57,6 @@
 
     <ItemGroup>
       <Folder Include="Configurations\Contexts\KipServiceTestWork\" />
-      <Folder Include="Configurations\Entities\" />
-      <Folder Include="Entities\" />
       <Folder Include="Migrations\" />
     </ItemGroup>
 </Project>
